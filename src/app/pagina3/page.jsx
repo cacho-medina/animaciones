@@ -35,6 +35,11 @@ function page() {
                         ScrollTrigger (horizontal)
                     </Link>
                 </li>
+                <li className="transition-colors hover:bg-white">
+                    <Link href="https://codepen.io/michalsnik/pen/WxNdvq">
+                        AOS animations
+                    </Link>
+                </li>
             </ul>
         </div>
     );
