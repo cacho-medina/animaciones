@@ -55,6 +55,18 @@ function Navbar() {
                         Page 3
                     </Link>
                 </motion.li>
+                <motion.li
+                    className="list-none"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <Link
+                        href="/efectos_css"
+                        className="transition-all text-lg hover:underline"
+                    >
+                        css effects
+                    </Link>
+                </motion.li>
             </div>
         </nav>
     );
