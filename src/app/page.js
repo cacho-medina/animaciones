@@ -7,17 +7,19 @@ export default function Home() {
         <div>
             <div transition-style="out:circle:top-right" className="relative">
                 <div className="absolute h-screen w-full grid place-items-center bg-pink-300">
-                    <h1 className="font-bold text-7xl">Animaciones Varias</h1>
+                    <h1 className="font-bold text-7xl text-[#def]">
+                        Animaciones Varias
+                    </h1>
                 </div>
             </div>
             <div className="bg-red-400 grid place-items-center h-screen">
-                <h1 className="font-medium text-center text-7xl text-black">
+                <h1 className="font-medium text-center text-7xl text-[#def]">
                     ANIMACIONES CON <br /> GSAP Y FRAMER MOTION
                 </h1>
             </div>
             <div className="grid place-items-center h-screen">
                 <Slide>
-                    <h1 className="font-medium text-center text-7xl text-black">
+                    <h1 className="font-medium text-center text-7xl text-[#def]">
                         ANIMACION Slide CON <br /> React Awesome Reveal
                     </h1>
                 </Slide>

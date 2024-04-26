@@ -1,7 +1,16 @@
 "use client";
+import { useEffect } from "react";
 import Image from "next/image";
 
 function Efectos() {
+    useEffect(() => {
+        (async () => {
+            const LocomotiveScroll = (await import("locomotive-scroll"))
+                .default;
+
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    }, []);
     return (
         <div transition-style="in:wipe:top-right" className="css-container">
             <div className="div-effect h-screen grid place-items-center bg-blue-300">
@@ -105,8 +114,12 @@ function Efectos() {
                     />
                 </div>
             </div>
-            <div className="div-effect h-screen flex justify-center bg-red-300 py-14">
+            <div className="div-effect h-screen flex flex-col items-center justify-center gap-16 bg-red-300 py-14">
                 <h2 className="text-5xl font-medium text-white">BG Parallax</h2>
+                <div className="flex gap-10">
+                    <div className="w-[200px] h-[200px] rounded-xl btn bg-blue-500"></div>
+                    <div className="w-[200px] h-[200px] rounded-xl btn bg-pink-400"></div>
+                </div>
             </div>
             <div className="div-effect h-screen grid place-items-center bg-slate-600">
                 <h2 className="text-5xl font-medium text-white">Zoom Image</h2>

@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import AOS from "aos";
 import { useEffect } from "react";
-import Locomotive from "@/components/Locomotive";
 
 function AosPage() {
     useEffect(() => {
@@ -44,7 +43,6 @@ function AosPage() {
                     className="bg-pink-500 w-[200px] h-[200px] rounded-xl"
                 ></div>
             </div>
-            {/* <Locomotive /> */}
         </div>
     );
 }
