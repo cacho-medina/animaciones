@@ -67,6 +67,18 @@ function Navbar() {
                         css effects
                     </Link>
                 </motion.li>
+                <motion.li
+                    className="list-none"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <Link
+                        href="/gsap"
+                        className="transition-all text-lg hover:underline"
+                    >
+                        GSAP
+                    </Link>
+                </motion.li>
             </div>
         </nav>
     );

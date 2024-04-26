@@ -5,6 +5,11 @@ import { Slide, JackInTheBox } from "react-awesome-reveal";
 export default function Home() {
     return (
         <div>
+            <div transition-style="out:circle:top-right" className="relative">
+                <div className="absolute h-screen w-full grid place-items-center bg-pink-300">
+                    <h1 className="font-bold text-7xl">Animaciones Varias</h1>
+                </div>
+            </div>
             <div className="bg-red-400 grid place-items-center h-screen">
                 <h1 className="font-medium text-center text-7xl text-black">
                     ANIMACIONES CON <br /> GSAP Y FRAMER MOTION

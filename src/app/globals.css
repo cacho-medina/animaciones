@@ -44,6 +44,20 @@
     animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-top-right both;
 }
 
+@keyframes circle-out-top-right {
+    from {
+        clip-path: circle(125%);
+    }
+    to {
+        clip-path: circle(0% at top right);
+    }
+}
+
+[transition-style="out:circle:top-right"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-out-top-right both;
+    --transition__delay: 2.3s;
+}
+
 .css-container {
     scroll-snap-type: y mandatory;
 }
